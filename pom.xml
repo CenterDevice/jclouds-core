@@ -6,7 +6,7 @@
 
 	<groupId>de.codecentric</groupId>
 	<artifactId>centerdevice-jclouds-core</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 
 	<properties>
 			<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -27,6 +27,12 @@
 				<artifactId>gson</artifactId>
 				<version>2.4</version>
 			</dependency>
+			<!-- Force usage of guava 18.0 -->
+			<dependency>
+				<groupId>com.google.guava</groupId>
+				<artifactId>guava</artifactId>
+				<version>18.0</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 
@@ -34,6 +40,10 @@
 		<dependency>
 			<groupId>com.google.code.gson</groupId>
 			<artifactId>gson</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.jclouds</groupId>
